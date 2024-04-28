@@ -158,5 +158,5 @@ fi
 #### Additions
 alias dir='ls -lAF'
 alias dkps='docker ps --format "{{.ID}}: {{.Names}}\t{{.Status}}"'
-alias dm='dmesg -H -w -T'
+alias dm='sudo dmesg -H -w -T'
 neofetch
