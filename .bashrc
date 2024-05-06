@@ -159,4 +159,4 @@ fi
 alias dir='ls -lAF'
 alias dkps='docker ps --format "{{.ID}}: {{.Names}}\t{{.Status}}"'
 alias dm='sudo dmesg -H -w -T'
-neofetch
+fastfetch
