@@ -160,3 +160,17 @@ alias dir='ls -lAF'
 alias dkps='docker ps --format "{{.ID}}: {{.Names}}\t{{.Status}}"'
 alias dm='sudo dmesg -H -w -T'
 fastfetch
+# Functions
+dotfiles () {
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/.bashrc -o .bashrc
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/update.sh  -o update.sh
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/fastfetch.config.jsonc -o ~/.config/fastfetch/co>
+}
+
+ffupd () {
+# Install/update fastfetch
+   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.0/fastfetch-lin>
+   sudo dpkg -i /tmp/fastfetch.deb
+   rm /tmp/fastfetch.deb
+   fastfetch
+}
