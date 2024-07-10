@@ -164,7 +164,7 @@ fastfetch
 dotfiles () {
    curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/.bashrc -o .bashrc
    curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/update.sh  -o update.sh
-   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/fastfetch.config.jsonc -o ~/.config/fastfetch/co>
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/fastfetch.config.jsonc -o ~/.config/fastfetch/config.jsonc>
 }
 
 ffupd () {
