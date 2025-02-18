@@ -155,10 +155,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#### Additions
+###################
+#### Additions ####
+###################
 alias dir='ls -lAF'
 alias dkps='docker ps --format "{{.ID}}: {{.Names}}\t{{.Status}}"'
 alias dm='sudo dmesg -H -w -T'
+alias linutil='curl -fsSL christitus.com/linux | sh"
 fastfetch
 # Functions
 dotfiles () {
