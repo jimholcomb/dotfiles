@@ -179,4 +179,4 @@ ffupd () {
    rm /tmp/fastfetch.deb
    fastfetch
 }
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
