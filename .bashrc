@@ -175,7 +175,7 @@ dotfiles () {
 
 ffupd () {
 # Install/update fastfetch
-   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.48.1/fastfetch-linux-amd64.deb
+   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.49.0/fastfetch-linux-amd64.deb
    sudo dpkg -i /tmp/fastfetch.deb
    rm /tmp/fastfetch.deb
    fastfetch
