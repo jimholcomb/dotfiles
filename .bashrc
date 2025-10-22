@@ -181,3 +181,8 @@ ffupd () {
    fastfetch
 }
 # eval "$(starship init bash)"
+
+if [ -f .bashrc_local ];
+then
+    source .bashrc_local
+fi
