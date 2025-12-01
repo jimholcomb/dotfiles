@@ -162,7 +162,10 @@ alias dir='ls -lAF'
 alias dkps='docker ps --format "{{.ID}}: {{.Names}}\t{{.Status}}"'
 alias dm='sudo dmesg -H -w -T'
 alias linutil='curl -fsSL christitus.com/linux | sh'
+alias pls='sudo $(fc -ln -1)'
+
 fastfetch
+
 # Functions
 dotfiles () {
    cd ~
