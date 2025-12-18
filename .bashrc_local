@@ -1,0 +1,1 @@
+alias bat='/usr/bin/batcat' # bat command on Debian is called batcat do a naming conflict
