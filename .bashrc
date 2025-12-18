@@ -172,13 +172,13 @@ dotfiles () {
    curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/.bashrc -o .bashrc
    curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/update.sh  -o update.sh
    curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/fastfetch.config.jsonc -o ~/.config/fastfetch/config.jsonc
-   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/starship.toml -o ~/.config/starship.toml
+   #curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/starship.toml -o ~/.config/starship.toml
    source .bashrc
 }
 
 ffupd () {
 # Install/update fastfetch
-   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.56.0/fastfetch-linux-amd64.deb
+   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.56.1/fastfetch-linux-amd64.deb
    sudo dpkg -i /tmp/fastfetch.deb
    rm /tmp/fastfetch.deb
    fastfetch
