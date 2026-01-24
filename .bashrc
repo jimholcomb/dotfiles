@@ -163,6 +163,7 @@ alias dkps='docker ps --format "{{.ID}}: {{.Names}}\t{{.Status}}"'
 alias dm='sudo dmesg -H -w -T'
 alias linutil='curl -fsSL christitus.com/linux | sh'
 alias pls='sudo $(fc -ln -1)'
+alias ff='clear && fastfetch'
 
 fastfetch
 
@@ -178,7 +179,7 @@ dotfiles () {
 
 ffupd () {
 # Install/update fastfetch
-   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.57.1/fastfetch-linux-amd64.deb
+   curl -L -o /tmp/fastfetch.deb  https://github.com/fastfetch-cli/fastfetch/releases/download/2.58.0/fastfetch-linux-amd64.deb
    sudo dpkg -i /tmp/fastfetch.deb
    rm /tmp/fastfetch.deb
    fastfetch
