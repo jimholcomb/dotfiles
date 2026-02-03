@@ -20,4 +20,11 @@ alias nsts="curl -s https://raw.githubusercontent.com/d99kris/nchat/refs/heads/m
 alias pls='sudo $(fc -ln -1)'
 export PATH="/usr/local/sbin:$PATH"
 export EDITOR=nano
+dotfiles () {
+   cd ~
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/refs/heads/main/.zshrc -o .zshrc
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/macupdate.sh  -o update.sh
+   curl https://raw.githubusercontent.com/jimholcomb/dotfiles/main/fastfetch.config.jsonc -o ~/.config/fastfetch/config.jsonc
+   source .zshrc
+}
 fastfetch
