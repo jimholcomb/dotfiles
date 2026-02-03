@@ -1,0 +1,1 @@
+curl https://raw.githubusercontent.com/jimholcomb/dotfiles/refs/heads/main/.zshrc -o .zshrc
