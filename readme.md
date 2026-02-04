@@ -1,1 +1,1 @@
-Linux config files
+Linux and MacOS config files
