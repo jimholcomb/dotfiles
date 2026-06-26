@@ -1,4 +1,4 @@
 #!/bin/bash
 brew update
 brew outdated
-brew upgrade --greedy
+brew upgrade --greedy --no-ask
